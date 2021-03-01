@@ -2,16 +2,22 @@
     <div>
         <h1>Word of the day</h1>
         <Card class="myCard1" :title="title" :content="content"/>
-        <p>{{info}}</p>
+        <div class="button-wrapper">
+            <Button >Refresh</Button>
+        </div>
+        <!-- <Button>New word</Button> -->
     </div>
 </template>
 <script>
 import axios from 'axios'
 import Card from '@/components/Card.vue'
+import Button from '@/components/Button.vue'
+
 export default {
     name: 'WordOfDay',
     components: {
-        Card
+        Card,
+        Button
     },
     data () {
       return {
@@ -43,7 +49,13 @@ export default {
 </script>
 <style scoped>
 .myCard1{
-    height: 400px;
+    height: 300px;
     margin: 20px;
+}
+.button-wrapper{
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr;
+    justify-items: center;
 }
 </style>
