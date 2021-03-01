@@ -26,9 +26,10 @@ export default {
         axios
         .get('https://word-of-day-backend.herokuapp.com/wordofday')
         .then(response => {
+            console.log(response)
             this.info = response.data.bpi
-            this.title = response.data.name
-            this.content = response.data.description
+            this.title = response.data.data.name
+            this.content = response.data.data.description
         })
         .catch(error => {
             console.log(error)
