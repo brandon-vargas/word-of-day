@@ -2,6 +2,7 @@
   <div class="home">
     <!-- <img alt="Vue logo" src="../assets/logo.png">
     <HelloWorld msg="Welcome to Your Vue.js App"/> -->
+    <h1 v-bind:style="{}">Lesson of the day</h1>
     <WordOfDay/>
   </div>
 </template>
@@ -19,3 +20,8 @@ export default {
   }
 }
 </script>
+<style scoped>
+.home {
+  margin-bottom: 60px;
+}
+</style>

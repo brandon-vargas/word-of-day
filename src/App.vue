@@ -5,6 +5,8 @@
       <router-link to="/about">About</router-link>
     </div> -->
     <router-view/>
+    <!-- <router-link to="/">Vocabulary</router-link> |
+    <router-link to="/about">Finance</router-link> -->
   </div>
 </template>
 
