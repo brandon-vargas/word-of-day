@@ -36,7 +36,7 @@ export default {
     grid-template-columns: 1fr 1fr;
     justify-items: right;
     padding: 5px;
-    margin-top: 20px;
+    padding-top: 20px;
 }
 .innerBarWrapper {
     display: grid;
