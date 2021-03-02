@@ -2,18 +2,31 @@
     <div class="outterBarWrapper">
         <img src="../assets/astronaut.png" v-bind:style="{justifySelf: 'left', paddingLeft: '20px'}"/>
         <div class="innerBarWrapper">
-            <div v-bind:style="{alignSelf: 'center'}">
-                About
+            <div v-bind:style="{alignSelf: 'center', color: '#2c90c6'}">
+                Home
             </div>
             <div v-bind:style="{alignSelf: 'center'}">
                 Work
+            </div>
+            <div v-bind:style="{alignSelf: 'center'}">
+                About
             </div>
         </div>
     </div>
 </template>
 <script>
 export default {
-    name: 'Appbar'
+    name: 'Appbar',
+    data() {
+        return {
+            collapsed: true,
+        };
+    },
+    methods: {
+        toggleCollapsed() {
+          this.collapsed = !this.collapsed;
+        },
+    },
 }
 </script>
 <style scoped>
@@ -28,8 +41,8 @@ export default {
 .innerBarWrapper {
     display: grid;
     grid-template-rows: 1fr;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     justify-content: right;
-    width: 80%;
+    width: 90%;
 }
 </style>
