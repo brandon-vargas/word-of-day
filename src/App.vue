@@ -1,15 +1,19 @@
 <template>
-  <div id="app">
-    <!-- <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div> -->
+  <v-app id="app">
+    <Appbar/>
     <router-view/>
-    <!-- <router-link to="/">Vocabulary</router-link> |
-    <router-link to="/about">Finance</router-link> -->
-  </div>
+  </v-app>
 </template>
+<script>
+import Appbar from '@/components/Appbar.vue'
 
+export default {
+  name: 'App',
+  components: {
+      Appbar,
+  }
+}
+</script>
 <style>
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;

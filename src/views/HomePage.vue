@@ -1,23 +1,20 @@
 <template>
     <div class="homePage">
-        <Appbar/>
         <div >
+            <br/><br/><br/><br/>
             <h1 class="name">I'm Brandon</h1>
             <p>A programmer for funsies</p>
             <!-- <img src="../assets/editone.png"/> -->
         </div>
+        <!-- <a-button ghost v-bind:style="{border: 'transparent'}">Default</a-button> -->
         <!-- <Card :title="'i am a title'" :content="'i am some description that explains i really dont knowi am some description that explains i really dont knowi am some description that explains i really dont knowi am some description that explains i really dont knowi am some description that explains i really dont knowi am some description that explains i really dont knowi am some description that explains '"></Card> -->
 
     </div>
 </template>
 <script>
-import Appbar from '@/components/Appbar.vue'
-// import Card from '@/components/Card.vue'
 export default {
     name: 'HomePage',
     components: {
-        Appbar,
-        // Card
     }
 }
 </script>
